@@ -1,0 +1,17 @@
+// GENERAL
+
+body {
+    opacity:0;
+    transition: 1s;
+    transform: translate(0, -150px);
+    }
+
+ul {
+    list-style-type: none;
+    margin: 0px 10%;
+    padding: 0px;
+}
+
+li {
+    overflow: hidden;
+}

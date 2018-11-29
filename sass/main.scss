@@ -1,0 +1,18 @@
+main {
+    padding: 0px 10%;
+}
+
+// ABOUT
+.about {
+    .about-img {
+        height: 300px;
+        width: 300px;
+        background-image: url('https://pokemonletsgo.pokemon.com/assets/img/common/char-pikachu.png');
+        background-position: 65% 40%;
+        border-radius: 50%;
+    }
+
+    .content {
+        width: 50%;
+    }
+}

@@ -1,0 +1,69 @@
+body {
+  opacity: 0;
+  transition: 1s;
+  transform: translate(0, -150px); }
+
+ul {
+  list-style-type: none;
+  margin: 0px 10%;
+  padding: 0px; }
+
+li {
+  overflow: hidden; }
+
+.banner {
+  height: 70vH;
+  min-height: 315px;
+  background-image: linear-gradient(45deg, black, transparent 80%), url("https://images.unsplash.com/photo-1543074218-cc16958718bc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ede1877892dedb4f98f062a7c5ca1e64&auto=format&fit=crop&w=968&q=80");
+  background-size: cover;
+  background-position: 50% 20%;
+  position: relative; }
+  .banner .content {
+    padding-top: 120px;
+    color: white; }
+  .banner h1 {
+    font-size: 60px; }
+  .banner h3 {
+    font-size: 32px; }
+
+nav {
+  position: absolute;
+  bottom: 0px; }
+  nav a {
+    color: white;
+    transition: .2s;
+    text-decoration: none;
+    position: relative;
+    z-index: 10; }
+  nav a:hover {
+    color: salmon;
+    transition: .2s;
+    text-decoration: none;
+    letter-spacing: .5px; }
+
+li div {
+  background-color: salmon;
+  height: 1px;
+  width: 100%;
+  transform: translate(0, -15px);
+  visibility: hidden;
+  transition: .1s;
+  transition-timing-function: ease-in-out; }
+
+li a:hover + div {
+  transition: .4s;
+  visibility: visible;
+  transform: translate(0, 0); }
+
+main {
+  padding: 0px 10%; }
+
+.about .about-img {
+  height: 300px;
+  width: 300px;
+  background-image: url("https://pokemonletsgo.pokemon.com/assets/img/common/char-pikachu.png");
+  background-position: 65% 40%;
+  border-radius: 50%; }
+
+.about .content {
+  width: 50%; }
