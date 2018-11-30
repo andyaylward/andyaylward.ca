@@ -43,19 +43,19 @@ nav {
 }
 
 li {
-    div{
+    .nav-effect{
         background-color: salmon;
         height: 1px;
-        width: 100%;
         transform: translate(0, -15px); 
         visibility: hidden;
         transition: .1s;
         transition-timing-function: ease-in-out;
     }
 
-    a:hover + div{
+    a:hover + .nav-effect{
         transition: .4s;
         visibility: visible;
         transform: translate(0, 0); 
     }
+
 }
