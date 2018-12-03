@@ -1,0 +1,52 @@
+// PROJECTS
+#project {
+    width: 100%;
+
+    h1 {
+        text-align: center;
+    }
+
+    .project-gallery {
+        height: 360px;
+        width: 640px;
+        background-size: cover;
+        border: black 1px solid;
+        margin: 0 auto;
+    }
+
+    p {
+        font-style: italic;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+        transition: .2s;
+
+        &:hover {
+            letter-spacing: .5px;
+            color:salmon;
+            transition: .2s;
+        }
+    }
+}
+
+@media (max-width: 999px) {
+    #project{
+        .project-gallery {
+        
+        height: 288px;
+        width: 512px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    #project{
+        .project-gallery {
+        
+        height: 240px;
+        width: 426px;
+        }
+    }
+}

@@ -18,6 +18,13 @@ h4 {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 200; }
 
+main {
+  padding: 0px 10%; }
+
+@media (max-width: 832px) {
+  main {
+    padding: 0px 2%; } }
+
 .banner {
   height: 70vH;
   min-height: 315px;
@@ -61,12 +68,22 @@ li a:hover + .nav-effect {
   visibility: visible;
   transform: translate(0, 0); }
 
-main {
-  padding: 0px 10%; }
+#about .about-img {
+  height: 300px;
+  width: 300px;
+  background-image: url("https://images.unsplash.com/photo-1509114397022-ed747cca3f65?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2daae6fa88d0422996cb571d9e41681e&auto=format&fit=crop&w=675&q=80");
+  background-position: 65% 40%;
+  border-radius: 50%;
+  transition: .2s; }
+
+#about .content {
+  width: 50%; }
 
 #loading-bar {
-  width: 0%;
+  width: 0px;
   height: 5px;
+  position: absolute;
+  bottom: -20px;
   background-color: grey;
   border-radius: 30px;
   transition: 2s;
@@ -75,15 +92,15 @@ main {
   animation-timing-function: ease-in-out;
   animation-duration: 4s; }
 
-#about .about-img {
-  height: 300px;
-  width: 300px;
-  background-image: url("https://pokemonletsgo.pokemon.com/assets/img/common/char-pikachu.png");
-  background-position: 65% 40%;
-  border-radius: 50%; }
-
-#about .content {
-  width: 50%; }
+@keyframes loading {
+  0% {
+    width: 1%; }
+  90% {
+    width: 300px;
+    opacity: 1; }
+  100% {
+    width: 300px;
+    opacity: 0; } }
 
 #project {
   width: 100%; }
@@ -105,6 +122,16 @@ main {
       letter-spacing: .5px;
       color: salmon;
       transition: .2s; }
+
+@media (max-width: 999px) {
+  #project .project-gallery {
+    height: 288px;
+    width: 512px; } }
+
+@media (max-width: 700px) {
+  #project .project-gallery {
+    height: 240px;
+    width: 426px; } }
 
 #technical .tech-container {
   width: 100%;
@@ -147,7 +174,7 @@ main {
   top: 25px; }
 
 #technical .placeholder3 {
-  background-image: url("../imgs/ps.png");
+  background-image: url("../imgs/ai.png");
   left: 240px;
   top: 25px; }
 
@@ -189,19 +216,16 @@ main {
   animation-timing-function: ease-in-out;
   animation-duration: 4s; }
 
-#contact h1 {
-  color: black; }
-
 @keyframes floating {
   50% {
     transform: scale(1.1); } }
 
-@keyframes loading {
-  0% {
-    width: 1%; }
-  90% {
-    width: 100%;
-    opacity: 1; }
-  100% {
-    width: 100%;
-    opacity: 0; } }
+#contact h1 {
+  color: black; }
+
+footer {
+  color: white;
+  width: 100%;
+  height: 10vH;
+  min-height: 110px;
+  background-color: #333; }

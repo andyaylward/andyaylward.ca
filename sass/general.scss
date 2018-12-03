@@ -24,3 +24,13 @@ h4 {
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 200;
 }
+
+main {
+    padding: 0px 10%;
+}
+
+@media (max-width: 832px){
+    main {
+        padding: 0px 2%;
+    }
+}

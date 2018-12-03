@@ -5,6 +5,20 @@ function pageLoadBodyEffect() {
 }
 window.onload = pageLoadBodyEffect;
 
+// About Image
+const aboutImgList = ["https://images.unsplash.com/photo-1509114397022-ed747cca3f65?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2daae6fa88d0422996cb571d9e41681e&auto=format&fit=crop&w=675&q=80", "https://images.unsplash.com/photo-1542979666-0d943dd97b2f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7cbc560177a228210b6cae2fcb166233&auto=format&fit=crop&w=1267&q=80", "https://images.unsplash.com/photo-1542690969-8b36d56ca4e4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9e37508e6b0a3dd9b27b113e2e4b9231&auto=format&fit=crop&w=1350&q=80"]
+const aboutImg = document.getElementById('about-img');
+var currentImg = 0;
+
+setInterval(function(){
+    currentImg += 1;
+    console.log(currentImg);
+    if (currentImg > aboutImgList.length - 1) {
+        currentImg = 0;
+    }
+    aboutImg.style.backgroundImage = "url('" + aboutImgList[currentImg] + "')";
+},4000)
+
 // Project Gallery
 const next = document.getElementById('next');
 const previous = document.getElementById('previous');
@@ -36,7 +50,7 @@ next.addEventListener('click', function(){
     projectGallery.style.backgroundImage = "url('./imgs/" + projects[currentProject] + "')";
     projectHeading.innerHTML = heading[currentProject];
     projectInfo.innerHTML = description[currentProject];
-    projectLink.href = links[currentProject];
+    projectLink.href = link[currentProject];
 })
 
 previous.addEventListener('click', function(){
@@ -49,5 +63,6 @@ previous.addEventListener('click', function(){
     projectGallery.style.backgroundImage = "url('./imgs/" + projects[currentProject] + "')";
     projectHeading.innerHTML = heading[currentProject];
     projectInfo.innerHTML = description[currentProject];
-    projectLink.href = links[currentProject];
+    projectLink.href = link[currentProject];
 })
+
