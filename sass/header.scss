@@ -15,10 +15,12 @@
 
     h1 {
         font-size: 60px;
+        font-family: 'Quicksand', sans-serif;
     }
 
     h3 {
         font-size: 32px;
+        font-family: 'Quicksand', sans-serif;
     }
 }
 
@@ -56,6 +58,35 @@ li {
         transition: .4s;
         visibility: visible;
         transform: translate(0, 0); 
+    }
+
+}
+
+// MOBILE-MENU MEDIA QUERY
+
+@media (max-width: 400px){
+    .banner {
+        h1 {
+            font-size: 48px;
+        }
+
+        h3 {
+            font-size: 22px;
+        }
+    }
+
+    nav {
+        ul {
+        flex-direction: column;
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 10px;
+        
+            li {
+                padding-bottom: 10px;
+            }
+        }
     }
 
 }

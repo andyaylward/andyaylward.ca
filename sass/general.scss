@@ -26,11 +26,25 @@ h4 {
 }
 
 main {
+    overflow: hidden;
     padding: 0px 10%;
 }
 
-@media (max-width: 832px){
+@media (max-width: 767px){
     main {
         padding: 0px 2%;
+    }
+
+    nav {
+        ul {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+    }
+
+    #about {
+        .content {
+            text-align: center;
+        }
     }
 }

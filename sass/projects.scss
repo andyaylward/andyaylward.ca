@@ -50,3 +50,19 @@
         }
     }
 }
+
+@media (max-width: 615px) {
+    #project{
+        .project-gallery {
+        
+        height: 120px;
+        width: 213px;
+        }
+    }
+
+    footer{
+        i {
+            color: red;
+        }
+    }
+}
