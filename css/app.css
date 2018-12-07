@@ -133,8 +133,7 @@ li a:hover + .nav-effect {
     height: 360px;
     width: 640px;
     background-size: cover;
-    border: black 1px solid;
-    margin: 0 auto; }
+    border: black 1px solid; }
   #project p {
     font-style: italic; }
   #project a {
