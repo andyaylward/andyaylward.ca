@@ -28,10 +28,10 @@ const projectHeading = document.getElementById('projectHeading');
 const projectInfo = document.getElementById('projectInfo');
 const projectLink = document.getElementById('projectLink');
 
-const projects = ['animal.gif', 'quiz.gif', 'MWU.gif', 'quotes.gif']; 
-const heading = ['Animal Adoption Page', 'Canada Quiz', 'Responsive Page Design', 'Breaking Bad Quote Generator'];
-const description = ['A responsive site made about a fictional animal adoption company.','A 5 question triva quiz about Canada. Gives you a percentage score at the end.','Responsive website re-design for a Vancouver based company.','A page that cycles through several Breaking Bad quotes.'];
-const link = ['https://andy-aylward-cpnt-assignment-4-fpswjrnnoq.now.sh', 'https://canada-quiz-page-zvigvenqga.now.sh', 'https://andyaylward-mindwelluexercise2-htondefrpz.now.sh', 'https://breaking-bad-quote-machine-rifdvzhegq.now.sh'];
+const projects = ['response.gif','animal.gif', 'quiz.gif', 'snow.gif', 'kaizen.gif', 'MWU.gif', 'quotes.gif', 'lyrics.gif']; 
+const heading = ['Responsively Changing Page','Animal Adoption Page', 'Canada Quiz', 'Fictional Winter Sporting Good Business', 'Kaizen Automotive Landing Page Re-Design', 'MindWell-U Landing Re-Design', 'Breaking Bad Quote Generator', 'Song Lyric Generator'];
+const description = ['A site that completely changes at different width resizes','A responsive site made about a fictional animal adoption company.','A 5 question triva quiz about Canada. Gives you a percentage score at the end.', 'A site that was made using WordPress and WooCommerce plug-in. Based on a fictional local business that sells snowboard and ski equipment', 'A landing page re-design of a Calgary company called Kaizen Automotive. Modified car colors in Photoshop. Able to choose the cars color using JavaScript loop', 'Responsive website re-design for a Vancouver based company.','A page that cycles through several Breaking Bad quotes.', 'Can type in a song and artist to return the lyrics of the requested song. Song must be in Lyrics.ovh API in order to be succesfull'];
+const link = ['https://site-dthlaossqm.now.sh/#','https://andy-aylward-cpnt-assignment-4-fpswjrnnoq.now.sh', 'https://canada-quiz-page-zvigvenqga.now.sh', 'http://35.247.63.134/','https://kaizen-automotive-wvulowodqa.now.sh/', 'https://andyaylward-mindwelluexercise2-htondefrpz.now.sh', 'https://breaking-bad-quote-machine-rifdvzhegq.now.sh', 'https://lyric-finder-izoozjfhzo.now.sh/'];
 
 var currentProject = 0;
 
@@ -66,3 +66,24 @@ previous.addEventListener('click', function(){
     projectLink.href = link[currentProject];
 })
 
+// FORM
+const submit = document.getElementById('submit');
+
+submit.addEventListener('click', function(){
+    document.getElementById('bootstrapForm').submit(function (event) {
+        event.preventDefault();
+        alert('Form Submitted. Thanks.');
+        // var extraData = {}
+        // document.getElementById('bootstrapForm').ajaxSubmit({
+        //     data: extraData,
+        //     dataType: 'jsonp',  // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
+        //     error: function () {
+        //         // Submit of form should be successful but JSONP callback will fail because Google Forms
+        //         // does not support it, so this is handled as a failure.
+        //         alert('Form Submitted. Thanks.')
+        //         // You can also redirect the user to a custom thank-you page:
+        //         // window.location = 'http://www.mydomain.com/thankyoupage.html'
+            // }
+        // })
+    })   
+})

@@ -11,13 +11,20 @@ footer {
         font-size: 48px;
 
         &:hover {
-            color: #999;
             transition: .2s;
         }
     }
 
     .author {
         transition: .2s;
+    }
+
+    .fa-github-square:hover {
+        color: #6e5494;
+    }
+
+    .fa-linkedin:hover {
+        color: #0077b5;
     }
 }
 

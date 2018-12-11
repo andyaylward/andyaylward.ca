@@ -264,10 +264,13 @@ footer {
     transition: .2s;
     font-size: 48px; }
     footer i:hover {
-      color: #999;
       transition: .2s; }
   footer .author {
     transition: .2s; }
+  footer .fa-github-square:hover {
+    color: #6e5494; }
+  footer .fa-linkedin:hover {
+    color: #0077b5; }
 
 @media (max-width: 615px) {
   footer i {
